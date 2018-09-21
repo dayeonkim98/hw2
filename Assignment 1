@@ -18,19 +18,22 @@ function draw() {
     changeInX = -3;
   }
   if (x < 0) {
-    changeInX = 3;
+    changeInZ = 4;
   }
 	
-	ellipse(x, 80, 70);
+	ellipse(80, x, 70);
 	fill(10)
 	
-  x = x + changeInX;
+var z = 10;
+var changeInZ = 4;
+	
+  z = z + changeInZ;
   
-  if (x > width) {
-    changeInX = -8;
+  if (z > width) {
+    changeInZ = -4;
   }
   
-  if (x < 0) {
-    changeInX = 8;
+  if (z < 0) {
+    changeInZ = 4;
   }
 }
