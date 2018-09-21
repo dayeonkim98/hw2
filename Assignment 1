@@ -5,6 +5,9 @@ function setup() {
 var x = 10;
 var changeInX = 8;
 
+var z = 50;
+var changeInZ = 15;
+
 function draw() {
   background(220);
 	
@@ -21,19 +24,18 @@ function draw() {
     changeInX = 8;
   }
 	
-	ellipse(80, x, 70);
+	ellipse(80, z, 70);
 	fill(10)
 	
-var z = 50;
-var changeInZ = 100;
+
 	
   z = z + changeInZ;
   
   if (z > width) {
-    changeInZ = -100;
+    changeInZ = -15;
   }
   
   if (z < 0) {
-    changeInZ = 100;
+    changeInZ = 15;
   }
 }
