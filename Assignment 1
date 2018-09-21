@@ -15,10 +15,10 @@ function draw() {
 	x = x + changeInX;
 	
 	if (x > width) {
-    changeInX = -3;
+    changeInX = -8;
   }
   if (x < 0) {
-    changeInZ = 4;
+    changeInX = 4;
   }
 	
 	ellipse(80, x, 70);
